@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Buttons</title>
+		<link rel="stylesheet" href="./css/bootstrap.min.css" />
+		<style>
+			@keyframes pulse {
+				0% {
+					box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);
+				}
+
+				70% {
+					box-shadow: 0 0 0 10px rgba(0, 123, 255, 0);
+				}
+
+				100% {
+					box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+				}
+			}
+
+			.btn-pulse {
+				animation: pulse 1.5s infinite;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- Standard Buttons -->
+		<div class="container p-4">
+			<h4>1. Basic Buttons</h4>
+			<p class="text-muted">
+				Standard Bootstrap button styles with hover effects
+			</p>
+			<div class="mb-4">
+				<button type="button" class="btn btn-primary me-2">
+					Primary
+				</button>
+				<button type="button" class="btn btn-secondary me-2">
+					Secondary
+				</button>
+				<button type="button" class="btn btn-success me-2">
+					Success
+				</button>
+				<button type="button" class="btn btn-danger me-2">
+					Danger
+				</button>
+				<button type="button" class="btn btn-warning me-2">
+					Warning
+				</button>
+				<button type="button" class="btn btn-info me-2">Info</button>
+			</div>
+
+			<!-- Outline Buttons -->
+			<h4>2. Outline Buttons</h4>
+			<p class="text-muted">Outlined versions for a more subtle look</p>
+			<div class="mb-4">
+				<button type="button" class="btn btn-outline-primary me-2">
+					Primary
+				</button>
+				<button type="button" class="btn btn-outline-secondary me-2">
+					Secondary
+				</button>
+				<button type="button" class="btn btn-outline-success me-2">
+					Success
+				</button>
+				<button type="button" class="btn btn-outline-danger me-2">
+					Danger
+				</button>
+			</div>
+
+			<!-- Sizing Options -->
+			<h4>3. Button Sizes</h4>
+			<p class="text-muted">Different size variations for buttons</p>
+			<div class="mb-4">
+				<button type="button" class="btn btn-primary btn-lg me-2">
+					Large Button
+				</button>
+				<button type="button" class="btn btn-primary me-2">
+					Default Button
+				</button>
+				<button type="button" class="btn btn-primary btn-sm">
+					Small Button
+				</button>
+			</div>
+
+			<!-- Icon Buttons -->
+			<h4>4. Icon Buttons</h4>
+			<p class="text-muted">
+				Buttons with icons for better visual hierarchy
+			</p>
+			<div class="mb-4">
+				<button type="button" class="btn btn-primary me-2">
+					<i class="bi bi-plus-circle me-2"></i>Add Item
+				</button>
+				<button type="button" class="btn btn-success me-2">
+					<i class="bi bi-check-circle me-2"></i>Confirm
+				</button>
+				<button type="button" class="btn btn-danger">
+					<i class="bi bi-trash me-2"></i>Delete
+				</button>
+			</div>
+
+			<!-- Block Buttons -->
+			<h4>5. Block Buttons</h4>
+			<p class="text-muted">Full-width buttons using grid classes</p>
+			<div class="d-grid gap-2 mb-4">
+				<button type="button" class="btn btn-primary">
+					Block Button
+				</button>
+				<button type="button" class="btn btn-secondary">
+					Block Button
+				</button>
+			</div>
+
+			<!-- Button Group -->
+			<h4>6. Button Groups</h4>
+			<p class="text-muted">Grouped buttons for related actions</p>
+			<div class="btn-group mb-4" role="group" aria-label="Basic example">
+				<button type="button" class="btn btn-primary">Left</button>
+				<button type="button" class="btn btn-primary">Middle</button>
+				<button type="button" class="btn btn-primary">Right</button>
+			</div>
+
+			<!-- Loading Buttons -->
+			<h4>7. Loading State Buttons</h4>
+			<p class="text-muted">Buttons with loading spinners</p>
+			<div class="mb-4">
+				<button class="btn btn-primary me-2" type="button" disabled>
+					<span
+						class="spinner-border spinner-border-sm me-2"
+						role="status"
+						aria-hidden="true"
+					></span>
+					Loading...
+				</button>
+				<button class="btn btn-success" type="button" disabled>
+					<span
+						class="spinner-grow spinner-grow-sm me-2"
+						role="status"
+						aria-hidden="true"
+					></span>
+					Processing...
+				</button>
+			</div>
+
+			<!-- Pulsing Button -->
+			<h4>8. Pulsing Buttons</h4>
+			<button class="btn btn-primary btn-lg btn-pulse">
+				Pulsing Button
+			</button>
+		</div>
+		<script src="./js/bootstrap.min.js"></script>
+	</body>
+</html>
